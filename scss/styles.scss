@@ -1,5 +1,7 @@
-@import "components/reset";
-@import "components/body";
-@import "components/header";
-@import "components/navigation";
-@import "components/footer";
+// vendors
+@import "vendors/fonts";
+@import "vendors/reset";
+
+// components
+@import "components/top-menu";
+@import "components/first-section";

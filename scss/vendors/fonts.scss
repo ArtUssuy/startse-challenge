@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "BwModelica Bold";
+    font-weight: bold;
+    src: url("/medias/fonts/bw-modelica/BwModelica-Bold.woff") format("woff2");
+}
+
+@font-face {
+    font-family: "BwModelica Black";
+    src: url("/medias/fonts/bw-modelica/BwModelica-Black.woff") format("woff2");
+}
+
+@font-face {
+    font-family: "Isidora SemiBold";
+    src: url("/medias/fonts/isidora/Isidora-Alt-Semi-Bold.otf") format("otf");
+}
+
+$bw-bold: "BwModelica Bold";
+$bw-black: "BwModelica Black";
+$isidora-semibold: "Isidora SemiBold";

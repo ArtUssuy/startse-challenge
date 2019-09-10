@@ -1,0 +1,36 @@
+    .first-section {
+        margin-top: 170px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(8,120px);
+        .main-words {
+            grid-column-start: 2;
+            grid-column-end: 8;
+            justify-self: left;
+            text-align: center;
+            width: 910px;
+            h1 {
+                font-size: 71px;
+                color: #FFF;
+                font-family: $bw-black;
+                text-transform: uppercase;
+                line-height: 90px;
+                span {
+                    font-size: 80px;
+                    color: #fffc00;
+                }
+            }
+            h2 {
+                font-size: 25px;
+                color: #fffc00;
+            }
+            button {
+                font-size: 25px;
+                color: #000;
+                background-color: #fffc00;
+            }
+        }
+        .sub-words {
+
+        }
+    }
