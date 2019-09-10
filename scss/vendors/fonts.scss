@@ -10,10 +10,35 @@
 }
 
 @font-face {
+    font-family: "BwModelica Regular";
+    src: url("/medias/fonts/bw-modelica/BwModelica-Regular.woff") format("woff2");
+}
+
+@font-face {
+    font-family: "BwModelica Extra Bold";
+    src: url("/medias/fonts/bw-modelica/BwModelica-ExtraBold.woff") format("woff2");
+}
+
+@font-face {
     font-family: "Isidora SemiBold";
-    src: url("/medias/fonts/isidora/Isidora-Alt-Semi-Bold.otf") format("otf");
+    src: url("/medias/fonts/isidora/Isidora-Alt-Semi-Bold.otf") format("opentype");
+}
+
+
+@font-face {
+    font-family: "Isidora Black";
+    src: url("/medias/fonts/isidora/Isidora-Black.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Isidora Regular";
+    src: url("/medias/fonts/isidora/Isidora-Alt-Regular.otf") format("opentype");
 }
 
 $bw-bold: "BwModelica Bold";
 $bw-black: "BwModelica Black";
+$bw-extra-bold: "BwModelica Extra Bold";
+$bw-regular: "BwModelica Regular";
 $isidora-semibold: "Isidora SemiBold";
+$isidora-black: "Isidora Black";
+$isidora-regular: "Isidora Regular";
