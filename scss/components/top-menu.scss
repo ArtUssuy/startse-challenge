@@ -1,11 +1,5 @@
-body {
-    background-color: #000;
-}
-
 .top-menu {
-    padding-right: 8%;
-    padding-left: 8%;
-    padding-top: 25px;
+    grid-column: 1/13;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,11 +40,5 @@ body {
                 }
             }
         }
-    }
-    .image-wrapper {
-        z-index: -1;
-        position: absolute;
-        top: 0;
-        right: 0;
     }
 }
