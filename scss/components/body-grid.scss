@@ -1,9 +1,9 @@
 body {
     background-color: #000;
-    padding: 25px 8% 0 8%;
+    padding-left: 8%;
     padding-right: calc(8% - 20px); 
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: auto 600px auto;
+    grid-template-rows: 75px 600px 230px 130px 145px 600px auto;
     column-gap: 20px;
 }
