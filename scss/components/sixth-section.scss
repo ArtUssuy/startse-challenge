@@ -1,0 +1,22 @@
+.sixthSec-img {
+    grid-column: 2/6;
+    grid-row: 13/15;
+    align-self: end;
+}
+
+.sixthSec-texts-wrapper {
+    grid-column: 4/11;
+    grid-row: 13/14;
+    align-self: end;
+    h4 {
+        font-family: $bw-extra-bold;
+        font-size: 50px;
+        color: #FFF;
+        margin-bottom: 50px;
+    }
+    span {
+        font-size: 23px;
+        font-family: $bw-light;
+        color: #FFFC00;
+    }
+}
