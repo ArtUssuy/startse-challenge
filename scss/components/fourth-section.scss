@@ -1,0 +1,32 @@
+.fourthSec-img {
+    z-index: -1;
+    grid-column: 1/6;
+    grid-row: 10/12;
+    align-self: end;
+} 
+
+.fourthSec-texts {
+    grid-column: 6/10;
+    grid-row: 10/10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 720px;
+    h2 {
+        margin-top: 350px;
+        font-family: $bw-extra-bold;
+        color: #FFFC00;
+        font-size: 55px;
+    }
+    p {
+        font-family: $bw-regular;
+        color: #FFF;
+        font-size: 20px;
+        line-height: 30px;
+        span {
+            font-family: $bw-bold;
+            color: #FFFC00;
+        }
+    }
+
+} 
