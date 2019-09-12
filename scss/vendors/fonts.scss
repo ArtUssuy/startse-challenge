@@ -6,6 +6,7 @@
 
 @font-face {
     font-family: "BwModelica Light";
+    font-weight: lighter;
     src: url("/medias/fonts/bw-modelica/BwModelica-Light.woff") format("woff2");
 }
 
@@ -25,7 +26,14 @@
 }
 
 @font-face {
+    font-family: "BwModelica Regular Italic";
+    font-style: italic;
+    src: url("/medias/fonts/bw-modelica/BwModelica-RegularItalic.woff") format("woff2");
+}
+
+@font-face {
     font-family: "BwModelica Extra Bold";
+    font-weight: bolder;
     src: url("/medias/fonts/bw-modelica/BwModelica-ExtraBold.woff") format("woff2");
 }
 
@@ -50,6 +58,7 @@ $bw-light: "BwModelica Light";
 $bw-black: "BwModelica Black";
 $bw-extra-bold: "BwModelica Extra Bold";
 $bw-regular: "BwModelica Regular";
+$bw-regular-italic: "BwModelica Regular Italic";
 $bw-medium: "BwModelica Medium";
 
 

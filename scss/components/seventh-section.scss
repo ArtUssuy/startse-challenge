@@ -1,0 +1,128 @@
+
+.seventhSec-title {
+    grid-column: 4/10;
+    grid-row: 15/15;
+    align-self: end;
+    text-align: center;
+    font-size: 55px;
+    color: #FFFC00;
+    font-family: $bw-light;
+    span {
+        font-family: $bw-extra-bold;
+    }
+}
+
+.speakers-wrapper {
+    grid-column: 3/11;
+    grid-row: 16/16;
+    align-self: end;
+    display: flex;
+    justify-content: space-between;
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        img {
+            margin-bottom: 40px;
+        }
+        span {
+            display: block;
+            width: 40px;
+            font-family: $bw-extra-bold;
+            font-size: 33px;
+            color: #FFF;
+            margin-bottom: 20px;
+            &:last-child {
+                display: inline;
+                width: auto;
+                font-family: $bw-medium;
+                font-size: 15px;
+                color: #FFFC00;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+.seventhSec-button {
+    grid-column: 5/9;
+    grid-row: 17/17;
+    justify-self: center;
+    align-self: end;
+    background-color: #FFFC00;
+    color: #000;
+    font-family: $bw-black;
+    font-size: 33px;
+    width: 560px;
+    height: 75px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #fffc00;
+    cursor: pointer;
+
+}
+.seventhSec-subtitle {
+    grid-column: 5/9;
+    grid-row: 18/18;
+    font-family: $bw-light;
+    font-size: 60px;
+    font-weight: lighter;
+    color: #FFFC00;
+    text-align: center;
+    align-self: end;
+    line-height: 80px;
+    span {
+        font-family: $bw-extra-bold;
+    }
+}
+.seventhSec-span {
+    grid-column: 4/10;
+    grid-row: 19/19;
+    align-self: end;
+    text-align: center;
+    font-family: $bw-regular-italic;
+    color: #FFF;
+    font-size: 22px;
+    line-height: 40px;
+}
+.seventhSec-inscreva-wrapper {
+    grid-column: 5/9;
+    grid-row: 20/20;
+    align-self: end;
+    background-color: #424141;
+    height: 630px;
+    h5 {
+
+    }
+    hr {
+
+    }
+    span {
+
+    }
+    .valor {
+        span {
+
+        }
+        &:last-child {
+
+        }
+    }
+    .valor-vista {
+        span {
+
+        }
+        &:last-child {
+
+        }
+    }
+    button {
+
+    }
+    .bandeiras {
+
+    }
+}
+
+
+
