@@ -6,8 +6,12 @@
 
 @font-face {
     font-family: "BwModelica Light";
-    font-weight: bold;
     src: url("/medias/fonts/bw-modelica/BwModelica-Light.woff") format("woff2");
+}
+
+@font-face {
+    font-family: "BwModelica Medium";
+    src: url("/medias/fonts/bw-modelica/BwModelica-Medium.woff") format("woff2");
 }
 
 @font-face {
@@ -46,6 +50,7 @@ $bw-light: "BwModelica Light";
 $bw-black: "BwModelica Black";
 $bw-extra-bold: "BwModelica Extra Bold";
 $bw-regular: "BwModelica Regular";
+$bw-medium: "BwModelica Medium";
 
 
 $isidora-semibold: "Isidora SemiBold";

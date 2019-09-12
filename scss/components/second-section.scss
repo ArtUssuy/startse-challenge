@@ -1,4 +1,4 @@
-.insanidade-wrapper {
+.secondSec-wrapper {
     grid-column: 4/11;
     grid-row: 6/6;
     align-self: flex-end;
@@ -20,8 +20,8 @@
     }
 }
 
-img {
+.secondSec-photo-albert {
     z-index: -1;
     grid-column: 2/6;
-    grid-row: 6/8;
+    grid-row: 6/10;
 }
