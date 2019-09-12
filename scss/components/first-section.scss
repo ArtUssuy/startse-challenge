@@ -6,7 +6,7 @@
 }
 
 .firstSec-words {
-    grid-column: 1/8;
+    grid-column: 2/8;
     grid-row: 2/2;
     align-self: self-end;
     justify-content: center;
@@ -49,7 +49,7 @@
 }
 
 .firstSec-local {    
-    grid-column: 2/5;
+    grid-column: 3/6;
     grid-row: 4/4;
     align-self: center;
     font-family: $isidora-regular;
@@ -69,7 +69,7 @@
 }
 
 .firstSec-date {
-    grid-column: 5/5;
+    grid-column: 6/6;
     grid-row: 4/4;
     align-self: center;
     justify-content: center;
@@ -94,7 +94,7 @@
 }
 
 .firstSec-adress {
-    grid-column: 6/9;
+    grid-column: 7/10;
     grid-row: 4/4;
     align-self: center;
     font-family: $isidora-regular;
