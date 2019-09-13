@@ -40,3 +40,9 @@
         font-family: $bw-bold;
     }
 }
+
+@media (max-width: 1520px) {
+    .thirdSec-img {
+        grid-column: 6/11;
+    }
+}

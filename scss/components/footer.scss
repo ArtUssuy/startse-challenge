@@ -36,17 +36,21 @@
 }
 .atendding {
     margin-left: 9%;
-    grid-column: 2/5;
+    grid-column: 2/6;
     grid-row: 25/25;
+    align-self: center;
     color: #FFF;
     display: flex;
-    align-items: center;
-    margin: 95px 0;
-    img {
-        width: 60px;
-        height: 60px;
+    .image-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        img {
+            width: 60px;
+            height: 60px;
+        }
     }
-    div {
+    .texts-wrapper {
         display: flex;
         flex-direction: column;
         position: relative;
@@ -57,10 +61,8 @@
             margin-left: 25px;
             &:first-child {
                 color: #FFFC00;
-                font-family: $isidora-bold;
                 font-size: 12px;
-                position: absolute;
-                top: -20px;
+                margin-bottom: 20px;
             }
             &:last-child {
             }
@@ -72,17 +74,15 @@
     grid-row: 25/25;
     color: #FFF;
     align-self: center;
-    margin: 95px 0;
-    margin-top: 75px;
+    padding-bottom: 10px;
     span {
-        font-family: $isidora-bold;
+        font-family: $isidora-medium;
         font-size: 15px;
         color: #262626;
     }
     div {
         display: flex;
         justify-content: space-between;
-        align-items: center;
         div {
             display: flex;
             flex-direction: column;
@@ -101,6 +101,7 @@
                     font-size: 18px;
                     color: #FFF;
                     margin-top: 15px;
+                    letter-spacing: 1px;
                     text-transform: lowercase;
                 }
             }
@@ -125,6 +126,43 @@
             font-size: 15px;
             text-transform: uppercase;
             color: #262626;
+        }
+    }
+}
+
+
+@media (max-width: 1520px) {
+
+    .atendding {
+        .image-wrapper {
+            img {
+            }
+        }
+        .texts-wrapper {
+            span {
+                font-size: 28px;
+                &:first-child {
+                }
+                &:last-child {
+                }
+            }
+        }
+    }
+
+    .telephones-wrapper {
+        span {
+        }
+        div {
+            div {
+                &:last-child {
+                }
+                span {
+                    font-size: 10px;
+                    &:last-child {
+                        font-size: 13px;
+                    }
+                }
+            }
         }
     }
 }

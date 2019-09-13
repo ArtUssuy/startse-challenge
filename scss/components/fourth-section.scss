@@ -30,3 +30,9 @@
     }
 
 } 
+
+@media (max-width: 1520px) { 
+    .fourthSec-texts {
+        grid-column: 6/11;
+    }
+}

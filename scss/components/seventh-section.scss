@@ -62,7 +62,7 @@
 
 }
 .seventhSec-subtitle {
-    grid-column: 5/9;
+    grid-column: 4/10;
     grid-row: 18/18;
     font-family: $bw-light;
     font-size: 60px;
@@ -72,6 +72,7 @@
     align-self: end;
     line-height: 80px;
     span {
+        display: block;
         font-family: $bw-extra-bold;
     }
 }
