@@ -11,7 +11,6 @@
         font-family: $bw-extra-bold;
     }
 }
-
 .speakers-wrapper {
     grid-column: 3/11;
     grid-row: 16/16;
@@ -170,10 +169,51 @@
         cursor: pointer;
         margin-bottom: 50px;
     }
-    .bandeiras {
+    // .bandeiras {
 
-    }
+    // }
 }
 
-
+@media (max-width: 1500px) {
+    .speakers-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto; 
+        column-gap: 20px;
+        row-gap: 20px;
+        justify-items: center;
+        grid-template-areas:
+        ". carolina jeremy ."
+        ". paula marco .";
+        div {
+            width: 250px;
+            text-align: center;
+            span {
+                width: auto;
+                margin-bottom: 5px;
+            }
+            img {
+                margin-bottom: 5px;
+            }
+            &:nth-child(1) {
+                grid-area: carolina;
+            }
+            &:nth-child(2) {
+                grid-area: jeremy;
+            }
+            &:nth-child(3) {
+                grid-area: paula;
+            }
+            &:nth-child(4) {
+                grid-area: marco;
+            }
+            img {
+            }
+            span {
+                &:last-child {
+                }
+            }
+        }
+    }
+}
 
