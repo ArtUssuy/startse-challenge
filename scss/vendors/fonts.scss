@@ -53,6 +53,16 @@
     src: url("/medias/fonts/isidora/Isidora-Alt-Regular.otf") format("opentype");
 }
 
+@font-face {
+    font-family: "Isidora Bold";
+    src: url("/medias/fonts/isidora/Isidora-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Isidora Medium";
+    src: url("/medias/fonts/isidora/Isidora-Medium.otf") format("opentype");
+}
+
 $bw-bold: "BwModelica Bold";
 $bw-light: "BwModelica Light";
 $bw-black: "BwModelica Black";
@@ -61,7 +71,8 @@ $bw-regular: "BwModelica Regular";
 $bw-regular-italic: "BwModelica Regular Italic";
 $bw-medium: "BwModelica Medium";
 
-
 $isidora-semibold: "Isidora SemiBold";
 $isidora-black: "Isidora Black";
+$isidora-bold: "Isidora Bold";
 $isidora-regular: "Isidora Regular";
+$isidora-medium: "Isidora Medium";
