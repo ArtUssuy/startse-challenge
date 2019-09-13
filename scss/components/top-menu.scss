@@ -1,4 +1,5 @@
 .top-menu {
+    z-index: 1;
     grid-row: 1/1;
     grid-column: 2/12;
     display: flex;
@@ -46,6 +47,6 @@
 
 @media (max-width: 600px) {
     .top-menu {
-        border: 1px solid red;
+        // border: 1px solid red;
     }
 }

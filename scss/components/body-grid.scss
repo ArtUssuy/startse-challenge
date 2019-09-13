@@ -1,7 +1,10 @@
-body {
+
+
+.grid {
+    z-index: -3;
     background-color: #000;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 3.906% 96%;
+    grid-template-rows: auto;
     column-gap: 20px;
 }
