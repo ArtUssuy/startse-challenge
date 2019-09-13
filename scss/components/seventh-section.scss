@@ -87,14 +87,15 @@
     line-height: 40px;
 }
 .seventhSec-inscreva-wrapper {
-    grid-column: 5/9;
+    grid-column: 4/10;
     grid-row: 20/20;
     align-self: end;
+    justify-self: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #424141;
-    height: 630px;
+    width: 625px;
     padding: 45px;
     h5 {
         font-family: $bw-regular;
@@ -111,11 +112,13 @@
     }
     span {
         font-size: 19px;
-        font-family: $bw-light;margin-bottom: 10px;
+        font-family: $bw-light;
+        margin-bottom: 25px;
         color: #FFF;
     }
     .valor {
-        width: 60%;
+        width: 340px;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         margin-bottom: 50px;
@@ -123,17 +126,19 @@
             font-family: $bw-black;
             color: #FFFC00;
             font-size: 34px;
-            margin-top: 30px;
+            margin: 0;
+            margin-top: 15px;
             &:last-child {
                 font-size: 102px;
                 color: #FFF;
                 font-family: $bw-bold;
-                margin-top: 0px;
+                margin: 0px;
+                line-height: 85px;
             }
         }
     }
     .valor-vista {
-        width: 22%;
+        width: 120px;
         display: flex;
         justify-content: space-between;
         margin-bottom: 50px;
@@ -141,12 +146,13 @@
             font-family: $bw-black;
             color: #FFFC00;
             font-size: 15px;
-            margin-top: 3px;
+            margin: 0px;
+            margin-top: 5px;
             &:last-child {
                 font-size: 27px;
                 color: #FFF;
-                font-family: $bw-bold;
-                margin-top: 0px;
+                font-family: $bw-light;
+                margin: 0px;
             }
         }
     }
