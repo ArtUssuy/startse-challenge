@@ -2,12 +2,6 @@ body {
     background-color: #000;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 75px 600px 230px 130px 145px 600px 145px 340px 390px 800px 200px 800px 650px 180px 200px 510px 140px 240px 125px 750px 280px 570px 120px 150px 250px 185px auto;
+    grid-template-rows: 3.906% 96%;
     column-gap: 20px;
-}
-
-@media (max-width: 1520px) {
-    body {
-        grid-template-rows: 75px 600px 230px 130px 145px 600px 145px 340px 390px 800px 200px 800px 650px 180px 200px 800px 140px 240px 125px 750px 280px 570px 120px 150px 250px 185px auto;
-    }
 }
