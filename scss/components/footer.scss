@@ -1,168 +1,149 @@
-.social-wrapper {
+footer {
     grid-column: 2/12;
-    grid-row: 24/24;
-    display: flex;
-    align-items: center;    
-    justify-content: space-between;
-    border-top: 1px solid #262626;
-    border-bottom: 1px solid #262626;
-    margin: 0 2.5%;
-    .logo {
-        width: 120px;
-        height: auto;
-        svg {
-            width: 100%;
-        }
-    }
-    div {
-        display: flex   ;
-        align-items: center;
-        span {
-            color: #FFF;
-            font-family: $isidora-bold;
-            font-size: 12px;
-            text-transform: uppercase;
-            word-spacing: 2px;
-            color: #FFFC00;
-            margin-right: 30px;
-        }
-        svg {
-            margin-right: 30px;
-            &:last-child {
-                margin-right: 0px;
-            }
-        }
-    }
-}
-.atendding {
-    margin-left: 9%;
-    grid-column: 2/6;
-    grid-row: 25/25;
+    grid-row: auto;
     align-self: center;
-    color: #FFF;
-    display: flex;
-    .image-wrapper {
+    display: grid;
+    grid-template-columns: 1/11; 
+    grid-template-rows: 1fr 2fr 1fr;
+    .social-wrapper {
+        grid-column: 1/12;
+        grid-row: 24/24;
         display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        img {
-            width: 60px;
-            height: 60px;
-        }
-    }
-    .texts-wrapper {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        span {
-            color: #FFF;
-            font-family: $isidora-regular;
-            font-size: 30px;
-            margin-left: 25px;
-            &:first-child {
-                color: #FFFC00;
-                font-size: 12px;
-                margin-bottom: 20px;
-            }
-            &:last-child {
-            }
-        }
-    }
-}
-.telephones-wrapper {
-    grid-column: 6/12;
-    grid-row: 25/25;
-    color: #FFF;
-    align-self: center;
-    padding-bottom: 10px;
-    span {
-        font-family: $isidora-medium;
-        font-size: 15px;
-        color: #262626;
-    }
-    div {
-        display: flex;
+        align-items: center;    
         justify-content: space-between;
-        div {
-            display: flex;
-            flex-direction: column;
-            &:last-child {
-                margin-right: 0px;
+        border-top: 1px solid #262626;
+        border-bottom: 1px solid #262626;
+        margin: 0 2.5%;
+        padding: 2.865vw 0;
+        .logo {
+            width: 6.250vw;
+            height: auto;
+            svg {
+                width: 100%;
             }
+        }
+        div {
+            display: flex   ;
+            align-items: center;
             span {
+                color: #FFF;
                 font-family: $isidora-bold;
-                font-size: 12px;
-                color: #FFFC00;
-                letter-spacing: 2px;
+                font-size: 0.625vw;
                 text-transform: uppercase;
-                margin-top: 30px;
+                word-spacing:0.104vw;
+                color: #FFFC00;
+                margin-right:1.563vw;
+            }
+            svg {
+                margin-right:1.563vw;
                 &:last-child {
-                    font-family: $bw-regular;
-                    font-size: 18px;
-                    color: #FFF;
-                    margin-top: 15px;
-                    letter-spacing: 1px;
-                    text-transform: lowercase;
+                    margin-right: 0px;
                 }
             }
         }
     }
-}
-
-
-.infos {
-    border-top: 1px solid #262626;
-    grid-column: 2/12;
-    grid-row: 26/26;
-    color: #FFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    span {
-        font-family: $bw-regular;
-        font-size: 14px;
-        color: #d1d1d1;
-        &:last-child {
-            font-size: 15px;
-            text-transform: uppercase;
-            color: #262626;
-        }
-    }
-}
-
-
-@media (max-width: 1520px) {
-
     .atendding {
+        padding: 2.865vw 0;
+        margin-left: 9%;
+        grid-column: 2/6;
+        grid-row: 25/25;
+        align-self: center;
+        color: #FFF;
+        display: flex;
         .image-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
             img {
+                width:3.125vw;
+                height:3.125vw;
             }
         }
         .texts-wrapper {
+            display: flex;
+            flex-direction: column;
+            position: relative;
             span {
-                font-size: 28px;
+                color: #FFF;
+                font-family: $isidora-regular;
+                font-size:1.563vw;
+                margin-left:1.302vw;
                 &:first-child {
+                    color: #FFFC00;
+                    font-size: 0.625vw;
+                    margin-bottom:1.042vw;
                 }
                 &:last-child {
                 }
             }
         }
     }
-
     .telephones-wrapper {
+        padding: 2.865vw 0;
+        grid-column: 6/12;
+        grid-row: 25/25;
+        color: #FFF;
+        align-self: center;
         span {
+            font-family: $isidora-medium;
+            font-size: 0.781vw;
+            color: #262626;
+            margin-bottom: 1.979vw;
+            display: block;
         }
         div {
+            display: flex;
+            justify-content: space-between;
             div {
+                display: flex;
+                flex-direction: column;
                 &:last-child {
+                    margin-right: 0px;
                 }
                 span {
-                    font-size: 10px;
+                    font-family: $isidora-bold;
+                    font-size: 0.625vw;
+                    color: #FFFC00;
+                    letter-spacing:0.104vw;
+                    text-transform: uppercase;
+                    margin-bottom: 0.625vw;
                     &:last-child {
-                        font-size: 13px;
+                        font-family: $bw-regular;
+                        font-size: 0.938vw;
+                        color: #FFF;
+                        letter-spacing:0.052vw;
+                        text-transform: lowercase;
                     }
                 }
             }
         }
     }
-}
+    .infos {
+        padding: 2.865vw 0;
+        border-top: 1px solid #262626;
+        grid-column: 2/12;
+        grid-row: 26/26;
+        color: #FFF;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span {
+            font-family: $bw-regular;
+            font-size:0.729vw;
+            color: #d1d1d1;
+            &:last-child {
+                font-size: 0.781vw;
+                text-transform: uppercase;
+                color: #262626;
+            }
+        }
+    }
+
+}    
+
+
+
+
+
+
+

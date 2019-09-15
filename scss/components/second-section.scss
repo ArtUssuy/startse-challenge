@@ -1,28 +1,72 @@
-.secondSec-wrapper {
-    grid-column: 5/11;
-    grid-row: 6/6;
-    align-self: flex-end;
-    justify-content: flex-end;
-    padding-left: 90px;
+.secondSec {
+    grid-column: 1/13;
+    grid-row: 3/5;
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: auto; 
+    margin-top: 10vw;
+    .secondSec-quote-wrapper {
+        grid-row: 3/5;
+        grid-column: 10/22;
+        z-index: 0;
+        align-self: center;
+        p {
+            font-family: $bw-extra-bold;
+            font-size: 3.385vw;
+            color: #FFF;
+            line-height: 3.906vw;
+            letter-spacing: 0.104vw
+        }
+        span {
+            display: block;
+            font-family: $bw-light;
+            font-size: 1.198vw;
+            margin-top: 2.604vh;
+            color: #FFFC00;
+        }
+    }
+    .secondSec-albert-wrapper {
+        grid-row: 2/6;
+        grid-column: 5/11;
+        img {
+            z-index: -1;
+        }
+    }
+    .secondSec-texts-wrapper {
+        grid-row: 7/11;
+        grid-column: 4/12;
+        z-index: 0;
+        h2 {
+            text-align: center;
+            color: #FFFC00;
+            font-size: 2.083vw;
+            font-family: $bw-bold;
+            text-align: center;
+            display: block;
+            line-height: 2.344vw;
+            margin-bottom: 2vw;
+        }
+        p {
+            font-size: 1.042vw;
+            font-family: $bw-medium;
+            color: #FFF;
+            line-height: 1.563vw;
+            word-spacing: 0.104vw;
+            margin-bottom: 2vw;
+            span {
+                color: #FFFC00;
+                font-family: $bw-bold;
+            }
+        }
+    }
+    .secondSec-mauricio-wrapper {
+        grid-column: 14/23;
+        grid-row: 5/10;
+        align-self: flex-start;
+        img {
+            z-index: -2; // menos que -1 para o fundo preto nao atropelar a foto do albert
+        }
+    }
 
-    p {
-        font-family: $bw-extra-bold;
-        font-size: 65px;
-        color: #FFF;
-        line-height: 75px;
-        letter-spacing: 2px;
-        margin-bottom: 50px;
-    }
-    span {  
-        font-family: $bw-light;
-        font-size: 23px;
-        color: #FFFC00;
-    }
 }
 
-.secondSec-photo-albert {
-    z-index: -1;
-    grid-column: 3/6;
-    grid-row: 6/10;
-    width: 120%;
-}

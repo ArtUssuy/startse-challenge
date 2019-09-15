@@ -1,219 +1,56 @@
-
-.seventhSec-title {
-    grid-column: 4/10;
-    grid-row: 15/15;
-    align-self: end;
-    text-align: center;
-    font-size: 55px;
-    color: #FFFC00;
-    font-family: $bw-light;
-    span {
-        font-family: $bw-extra-bold;
-    }
-}
-.speakers-wrapper {
-    grid-column: 3/11;
-    grid-row: 16/16;
-    align-self: end;
-    display: flex;
-    justify-content: space-between;
-    div {
+.seventhSec {
+    grid-column: 1/13;
+    grid-row: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1.6fr 2.2fr;
+    .seventhSec-titles-wrapper {
+        grid-column: 2/6;
+        grid-row: 1/1;
+        align-self: center;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        img {
-            margin-bottom: 40px;
+        align-items: center;
+        // padding: 6.771vw 0;
+        h5 {
+            font-size: 2.344vw;
+            color: #FFF;
+            text-align: center;
+            font-family: $bw-extra-bold;
+            margin-bottom: 1.823vw;
         }
         span {
-            display: block;
-            width: 40px;
-            font-family: $bw-extra-bold;
-            font-size: 33px;
-            color: #FFF;
-            margin-bottom: 20px;
+            text-align: center;
+            display: inline;
+            font-family: $bw-regular;
+            font-size: 1.094vw;
+            line-height: 1.563vw;
+            color:#FFF;
+        }
+        b {
+            color: #FFFC00;
+            text-align: center;
+            font-family: $bw-bold;
+            font-size: 1.094vw;
+        }
+    }
+}
+
+.seventhSec-questions-wrapper {
+    grid-column: 2/6;
+    grid-row: 2/2;
+    color: #afafaf;
+    font-family: $bw-medium;
+    font-size: 0.885vw;
+    margin-bottom: 5.729vw;
+    ul {
+        li {
+            margin-bottom: 2.344vw;
+            color: #afafaf;
+            font-family: $bw-medium;
             &:last-child {
-                display: inline;
-                width: auto;
-                font-family: $bw-medium;
-                font-size: 15px;
-                color: #FFFC00;
                 margin-bottom: 0px;
             }
         }
     }
 }
-.seventhSec-button {
-    grid-column: 5/9;
-    grid-row: 17/17;
-    justify-self: center;
-    align-self: end;
-    background-color: #FFFC00;
-    color: #000;
-    font-family: $bw-black;
-    font-size: 33px;
-    width: 560px;
-    height: 75px;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #fffc00;
-    cursor: pointer;
-
-}
-.seventhSec-subtitle {
-    grid-column: 4/10;
-    grid-row: 18/18;
-    font-family: $bw-light;
-    font-size: 60px;
-    font-weight: lighter;
-    color: #FFFC00;
-    text-align: center;
-    align-self: end;
-    line-height: 80px;
-    span {
-        display: block;
-        font-family: $bw-extra-bold;
-    }
-}
-.seventhSec-span {
-    grid-column: 4/10;
-    grid-row: 19/19;
-    align-self: end;
-    text-align: center;
-    font-family: $bw-regular-italic;
-    color: #FFF;
-    font-size: 22px;
-    line-height: 40px;
-}
-.seventhSec-inscreva-wrapper {
-    grid-column: 4/10;
-    grid-row: 20/20;
-    align-self: end;
-    justify-self: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #424141;
-    width: 625px;
-    padding: 45px;
-    h5 {
-        font-family: $bw-regular;
-        color: #FFFC00;
-        margin-bottom: 40px;
-        font-size: 36px;
-    }
-    hr {
-        width: 100%;
-        color: #505050;
-        border: none;
-        border-bottom: 1px solid #505050;
-        margin-bottom: 45px;
-    }
-    span {
-        font-size: 19px;
-        font-family: $bw-light;
-        margin-bottom: 25px;
-        color: #FFF;
-    }
-    .valor {
-        width: 340px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 50px;
-        span {
-            font-family: $bw-black;
-            color: #FFFC00;
-            font-size: 34px;
-            margin: 0;
-            margin-top: 15px;
-            &:last-child {
-                font-size: 102px;
-                color: #FFF;
-                font-family: $bw-bold;
-                margin: 0px;
-                line-height: 85px;
-            }
-        }
-    }
-    .valor-vista {
-        width: 120px;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 50px;
-        span {
-            font-family: $bw-black;
-            color: #FFFC00;
-            font-size: 15px;
-            margin: 0px;
-            margin-top: 5px;
-            &:last-child {
-                font-size: 27px;
-                color: #FFF;
-                font-family: $bw-light;
-                margin: 0px;
-            }
-        }
-    }
-    button {
-        width: 90%;
-        font-size: 25px;
-        color: #000;
-        font-family: $isidora-black;
-        text-transform: uppercase;
-        background-color: #fffc00;
-        border: none;
-        border-radius: 5px;
-        padding: 25px;
-        box-shadow: 0 0 10px #fffc00;
-        cursor: pointer;
-        margin-bottom: 50px;
-    }
-    // .bandeiras {
-
-    // }
-}
-
-@media (max-width: 1500px) {
-    .speakers-wrapper {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto auto; 
-        column-gap: 20px;
-        row-gap: 20px;
-        justify-items: center;
-        grid-template-areas:
-        ". carolina jeremy ."
-        ". paula marco .";
-        div {
-            width: 250px;
-            text-align: center;
-            span {
-                width: auto;
-                margin-bottom: 5px;
-            }
-            img {
-                margin-bottom: 5px;
-            }
-            &:nth-child(1) {
-                grid-area: carolina;
-            }
-            &:nth-child(2) {
-                grid-area: jeremy;
-            }
-            &:nth-child(3) {
-                grid-area: paula;
-            }
-            &:nth-child(4) {
-                grid-area: marco;
-            }
-            img {
-            }
-            span {
-                &:last-child {
-                }
-            }
-        }
-    }
-}
-

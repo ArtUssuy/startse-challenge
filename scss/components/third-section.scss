@@ -1,48 +1,67 @@
-.thirdSec-img {
-    z-index: -2; // menos que -1 para o fundo preto nao atropelar a foto do albert
-    grid-column: 7/11;
-    grid-row: 7/11;
-    margin-top: 40px;
-}
+.thirdSec {
+    grid-column: 1/13;
+    grid-row: auto;
+    margin-top: 11.458vw;
+    display: grid;
+    grid-template-columns: repeat(21,1fr);
+    grid-template-rows: auto;
+    .thirdSec-image-wrapper{
+        grid-column: 3/10;
+        align-self: end;
+        img {
+            z-index: -1;
+        }
+    } 
+    
+    .thirdSec-texts-wrapper {
+        grid-column: 12/20;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        h2 {
+            font-family: $bw-extra-bold;
+            color: #FFFC00;
+            font-size: 2.865vw;
+        }
+        p {
+            font-family: $bw-regular;
+            color: #FFF;
+            font-size: 1.042vw;
+            line-height: 1.3vw;
+            margin-top: 1.5vw;
+            span {
+                font-family: $bw-bold;
+                color: #FFFC00;
+            }
+        }
+    
+    } 
 
-.thirdSec-title {
-    grid-column: 2/7;
-    grid-row: 8/8;
-    align-self: flex-end;
-    align-items: center;
-    color: #FFFC00;
-    font-size: 40px;
-    font-family: $bw-bold;
-    text-align: center;
-    display: block;
-    width: 650px;
-    margin-left: 30px;
-    line-height: 45px;
-    min-width: 760px;
-}
-
-.thirdSec-texts {
-    grid-column: 2/7;
-    grid-row: 9/9;
-    font-size: 20px;
-    font-family: $bw-medium;
-    color: #FFF;
-    margin-top: 65px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    line-height: 30px;
-    word-spacing: 2px;
-    padding: 0 5px 0 5px;
-    min-width: 760px;
-    span {
-        color: #FFFC00;
-        font-family: $bw-bold;
+    .thirdSec-lessons-wrapper {
+        grid-column: 7/17;
+        align-self: center;
+        margin-top: 6.250vw;
+        .thirdSec-lesson {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 6.250vw;
+            h3 {
+                text-align: center;
+                font-size: 1.819vw;
+                color: #FFFC00;
+                font-family: $bw-extra-bold;
+                margin-bottom: 1.563vw;
+            }
+            p {
+                text-align: center;
+                font-size: 0.933vw;
+                color: #FFF;
+                font-family: $bw-regular;
+                line-height: 1.3vw;
+            }
+        }
     }
+
 }
 
-@media (max-width: 1520px) {
-    .thirdSec-img {
-        grid-column: 6/11;
-    }
-}

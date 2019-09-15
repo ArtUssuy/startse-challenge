@@ -4,7 +4,7 @@
     grid-column: 2/12;
     display: flex;
     justify-content: space-between;
-    padding-top: 1.302vh;
+    padding-top: 1.302vw;
     .logo {
         width: 7.292vw;
         svg {
@@ -33,7 +33,7 @@
                 
             }
             &:last-child {
-                padding: 0.781vh 1.563vw;
+                padding: 0.781vw 1.563vw;
                 border: 1px solid #fffc00;
                 border-radius: 0.260vw;
                 margin-right: 0;
