@@ -142,8 +142,135 @@ footer {
 }    
 
 
+@media (max-width: 768px) {
+    footer {
+        grid-column: 1/7;
+        grid-row: auto;
+        align-self: center;
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 0.6fr 1.7fr 0.6fr;
+        .social-wrapper {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;    
+            justify-content: space-between;
+            margin: 0 2.5%;
+            padding: 2.865vw 0;
+            .logo {
+                width: 90%;
+                height: auto;
+                svg {
+                    text-align: center;
+                    margin: 0 auto;
+                    width: 90%;
+                }
+            }
+            div {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                span {
+                    display: none;
+                }
+                svg {
+                    margin: 5vw 0 1.563vw 0;
+                    width: 100%;
+                }
+            }
+        }
+        .atendding {
+            padding: 2.865vw 0;
+            margin-left: 0;
+            grid-column: 1/2;
+            grid-row: 2/2;
+            align-self: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .image-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                img {
+                    width:6.125vw;
+                    height:6.125vw;
+                }
+            }
+            .texts-wrapper {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                span {
+                    font-size:3.563vw;
+                    margin-left:1.302vw;
+                    &:first-child {
+                        font-size: 2.625vw;
+                        margin-bottom:2.042vw;
+                    }
+                    &:last-child {
+                    }
+                }
+            }
+        }
+        .telephones-wrapper {
+            padding: 2.865vw 0;
+            grid-column: 1/2;
+            grid-row: 3/3;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            span {
+                font-size: 2.781vw;
+                display: block;
+                padding: 2vw;
+                text-align: center;
+                color: #FFF;
+            }
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    line-height: 5vw;
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                    span {
+                        font-size: 2.025vw;
+                        letter-spacing:0.104vw;
+                        margin-bottom: 0.625vw;
+                        &:last-child {
+                            font-size: 3.025vw;
+                            letter-spacing:0.052vw;
+                        }
+                    }
+                }
+            }
+        }
+        .infos {
+            padding: 2.865vw 0;
+            grid-column: 1/2;
+            grid-row: 4/5;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0 2vw;
+            span {
+                font-size:2.729vw;
+                line-height: 5vw;
+                text-align: center;
+                &:last-child {
+                    font-size: 2.781vw;
+                }
+            }
+        }
 
-
-
-
-
+    }  
+}

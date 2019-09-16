@@ -6,11 +6,15 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    column-gap: 20px;
+    column-gap: 1.042vw;
 }
 
-@media (min-width: 1400px) {
+@media(max-width: 768px) {
     .grid {
-        // background-color: red;
+        background-color: #000;
+        display: grid;
+        grid-template-columns: 5% 90% 5%;
+        grid-template-rows: auto;
+        column-gap: 0;
     }
 }

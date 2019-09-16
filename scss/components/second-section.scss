@@ -1,6 +1,6 @@
 .secondSec {
     grid-column: 1/13;
-    grid-row: 3/5;
+    grid-row: 2/3;
     display: grid;
     grid-template-columns: repeat(24, 1fr);
     grid-template-rows: auto; 
@@ -70,3 +70,69 @@
 
 }
 
+@media (max-width: 768px) {
+    .secondSec {
+    grid-column: 1/4;
+    grid-row: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 2fr 2fr 1fr;
+    .secondSec-quote-wrapper {
+        grid-row: 1/2;
+        grid-column: 1/7;
+        z-index: 0;
+        align-self: flex-end;
+        text-align: center;
+        padding: 2vw 2vw;
+        p {
+            font-size: 5.585vw;
+            line-height: 6.906vw;
+            letter-spacing: 0.104vw
+        }
+        span {
+            margin-top: 1.604vh;
+            font-size: 4.385vw;
+        }
+    }
+    .secondSec-albert-wrapper {
+        grid-row: 1/2;
+        grid-column: 2/6;
+        img {
+            z-index: -1;
+        }
+    }
+    .secondSec-texts-wrapper {
+        padding: 0 5%;
+        grid-row: 3/4;
+        grid-column: 1/7;
+        align-self: flex-start;
+        z-index: 0;
+        h2 {
+            text-align: center;
+            font-size: 3.885vw;
+            text-align: center;
+            line-height: 3.906vw;
+            margin-bottom: 2vw;
+        }
+        p {
+            text-align: center;
+            font-size: 2.5vw;
+            margin-top: 1.604vh;
+            line-height: 3.563vw;
+            word-spacing: 0.104vw;
+            margin-bottom: 2vw;
+            span {
+            }
+        }
+    }
+    .secondSec-mauricio-wrapper {
+        grid-row: 2/3;
+        grid-column: 2/6;
+        align-self: center;
+        img {
+            z-index: -2; // menos que -1 para o fundo preto nao atropelar a foto do albert
+        }
+    }
+
+}
+}

@@ -54,3 +54,50 @@
         }
     }
 }
+
+@media(max-width: 768px) {
+    .seventhSec {
+        grid-column: 1/7;
+        grid-row: auto;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1.6fr 2.2fr;
+        .seventhSec-titles-wrapper {
+            grid-column: 2/6;
+            grid-row: 1/1;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h5 {
+                font-size: 6.344vw;
+                margin-bottom: 3.823vw;
+            }
+            span {
+                font-size: 2.894vw;
+                line-height: 4.563vw;
+            }
+            b {
+                font-size: 2.894vw;
+            }
+        }
+    }
+    
+    .seventhSec-questions-wrapper {
+        grid-column: 1/7;
+        grid-row: 2/2;
+        font-size: 2.885vw;
+        margin-bottom: 5.729vw;
+        padding: 0 3vw;
+        ul {
+            li {
+                margin-bottom: 4.344vw;
+                line-height: 3.563vw;
+                text-align: left;
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}

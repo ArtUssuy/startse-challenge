@@ -100,3 +100,87 @@
         cursor: pointer;
     }
 }
+
+@media (max-width: 768px) {
+    .sixthSec {
+        grid-column: 1/4;
+        grid-row: auto;
+        text-align: center;
+        padding: 4.083vw 4.344vw;
+        margin: 20vw 10vw;
+        .sixthSec-box-title-wrapper {
+            h5 {
+                font-size: 5vw;
+                text-align: center;
+            }
+            hr {
+                width: 75%;
+                border: none;
+                text-align: center;
+                margin: 2.083vw auto;
+                
+            }
+        }
+        .sixthSec-valor-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .sixthSec-valor-subtext {
+                font-size: 2.990vw;
+                text-align: center;
+                margin-bottom: 1.406vw;
+            }
+            div {
+                display: flex;
+                align-items: center;  
+                margin-bottom: 5.125vw;
+                span {
+                    &:nth-child(1) {
+                        font-size: 1.771vw;
+                        display: block;
+                        height: 2.604vw;
+                        margin-right: 2.302vw;
+                    }
+                    &:nth-child(2) {
+                        font-size: 5.313vw;
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+        .sixthSec-valor-vista-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .sixthSec-valor-vista-subtext {
+                font-size: 2.990vw;
+                color: #FFF;
+                text-align: center;
+                margin-bottom: 0.938vw;
+            }
+            div {
+                display: flex;
+                align-items: center;  
+                margin-bottom: 1.083vw;
+                span {
+                    &:nth-child(1) {
+                        font-size: 1.781vw;
+                        display: block;
+                        height: 1.042vw;
+                        margin-right: 0.417vw;
+                    }
+                    &:nth-child(2) {
+                        font-size: 4.406vw;
+                    }
+                }
+            }
+        }
+        button {
+            margin: 2.604vw auto;
+            font-size: 2.719vw;
+            width: 75%;
+            border: none;
+            padding: 3% 0;
+        }
+    }
+}

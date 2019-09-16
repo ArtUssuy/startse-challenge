@@ -77,8 +77,8 @@
             color: #000;
             font-family: $bw-black;
             font-size: 1.719vw;
-            // width: 560px;
-            // height: 75px;
+            background-color: transparent;
+            border: none;
             text-transform: uppercase;
             cursor: pointer;
         }
@@ -112,4 +112,101 @@
     }
 }
 
-
+@media (max-width: 768px) {
+    .fifthSec {
+        margin-top: 30vw;
+        grid-column: 1/4;
+        grid-row: auto;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); 
+        grid-template-rows: auto;
+        row-gap: 8vw;
+        .fifthSec-title-wrapper {
+            grid-column: 2/6;
+            grid-row: 1/2;
+            align-self: center;
+            h3 {
+                font-size: 6.865vw;
+                line-height: 9.865vw;
+            }
+        }
+        .fifthSec-speakers-wrapper {
+            grid-column: 1/7;
+            grid-row: 2/2;
+            align-self: center;
+            display: grid;
+            grid-template-columns: 1fr; 
+            grid-template-rows: auto;
+            column-gap: 3.906vw;
+            padding: 0 25vw;
+            grid-template-areas: 
+            "carolina"
+            "jeremy"
+            "paula"
+            "marco";
+            .fifthSec-speaker-wrapper {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin-bottom: 2vw;
+                &:nth-child(1) {
+                    grid-area: carolina;
+                }
+                &:nth-child(2) {
+                    grid-area: jeremy;
+                }
+                &:nth-child(3) {
+                    grid-area: paula;
+                }
+                &:nth-child(4) {
+                    grid-area: marco;
+                }
+                img {
+                    margin-bottom: 2.083vw;
+                }
+                span {
+                    display: block;
+                    width: 100%;
+                    font-size: 3.719vw;
+                    margin-bottom: 1.042vw;
+                    &:last-child {
+                        display: inline;
+                        font-size: 2.781vw;
+                    }
+                }
+            }
+        }
+        .fifthSec-button-wrapper {
+            grid-column: 1/7;
+            padding: 2% 2%;
+            border: none;
+            border-radius: 5%;
+            button {
+                font-size: 1.719vw;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+        }
+        .fifthSec-texts-wrapper {
+            grid-column: 2/6;
+            grid-row: 4/4;
+            align-self: center;
+            text-align: center;
+            h5 {
+                font-size: 45px;
+                margin-bottom: 15px;
+                font-size: 6.125vw;
+                line-height: 6.823vw;
+                b {
+                    display: block;
+                }
+            }   
+            span {
+                display: block;
+                font-size: 3.146vw;
+                line-height: 3.781vw;
+            }
+        }
+    }
+}

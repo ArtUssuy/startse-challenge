@@ -1,6 +1,6 @@
 .thirdSec {
     grid-column: 1/13;
-    grid-row: auto;
+    grid-row: 3/4;
     margin-top: 11.458vw;
     display: grid;
     grid-template-columns: repeat(21,1fr);
@@ -65,3 +65,63 @@
 
 }
 
+@media (max-width: 768px) {
+    .thirdSec {
+        grid-column: 1/4;
+        grid-row: auto;
+        margin-top: 11.458vw;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        row-gap: 5vw;
+        .thirdSec-image-wrapper{
+            grid-column: 2/6;
+            grid-row: 1/1;
+            align-self: center;
+            img {
+            }
+        } 
+        
+        .thirdSec-texts-wrapper {
+            grid-column: 2/6;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            align-self: flex-start;
+            h2 {
+                font-size: 4.865vw;
+            }
+            p {
+                font-size: 3.042vw;
+                line-height: 4.3vw;
+                margin-top: 1.5vw;
+                span {
+                }
+            }
+        
+        } 
+    
+        .thirdSec-lessons-wrapper {
+            grid-column: 2/6;
+            align-self: center;
+            margin-top: 6.250vw;
+            .thirdSec-lesson {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 6.250vw;
+                h3 {
+                    text-align: center;
+                    font-size: 3.565vw;
+                    margin-bottom: 1.563vw;
+                }
+                p {
+                    text-align: center;
+                    font-size: 3.042vw;
+                    line-height: 4.3vw;
+                }
+            }
+        }
+    
+    }
+}
