@@ -50,6 +50,7 @@
 
 @media (max-width: 768px) {
     .top-menu {
+        z-index: 10;
         grid-column: 1/4;
         grid-row: 1/2;
         flex-direction: row-reverse;
@@ -64,6 +65,21 @@
                 height: 100%;
             }
         }
+        .closeMenu {
+            display: none;
+            font-size: 3vw;
+            z-index: 10;
+            font-family: "BwModelica Extra Bold";
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            background-color: #000;
+            color: #FFF;
+            border-radius: 10px;
+            padding: 4%;
+
+        }
+
         .hamburger-menu-wrapper {
             width: 30vw;
             display: flex;
@@ -84,21 +100,28 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: space-around;
             width: 100%;
             height: 50vh;
             position: absolute;
             top: -100vh;
-            background-color: gray;
+            background-color: #FFFC00;
             padding: 5vw 0;
+            animation-duration: 4s;
             div {
                 margin-right: 0;
-                margin-bottom: 5vw;
+                padding-bottom: 5vw;
                 &:last-child {
                     border-radius: 1vw;
                     padding: 4%;
+                    border: 1px solid black;
                 }
                 a {
-                    font-size: 6vw;
+                    color:#fffc00;
+                    font-size: 3vw;
+                    &:last-child {
+                        color:#000;
+                    }
                 }
             }
         }

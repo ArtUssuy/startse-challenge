@@ -53,3 +53,14 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .modal-wrapper {
+        form {
+            width: 90%;
+            button {
+                font-size: 4.302vw;
+            }
+        }
+    }
+}

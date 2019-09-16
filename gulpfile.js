@@ -8,10 +8,6 @@ const { series, dest, src } = require('gulp')
 function style() {
     console.log("SCSS...")
 
-    var sassdocOptions = {
-        dest: './sassdoc'
-      };
-
     return src('./scss/*.scss')
         .pipe(sourceMaps.init())
         .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
@@ -32,5 +28,5 @@ function watch() {
     
 }
 
-exports.default = series(style)
-exports.default = series(watch)
+
+exports.default = series(style, watch)
