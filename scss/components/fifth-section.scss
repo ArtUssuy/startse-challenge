@@ -68,12 +68,12 @@
         grid-row: 3/3;
         align-self: center;
         justify-self: center;
-        padding: 1.042vw 3.385vw;
         border: none;
         border-radius: 5px;
         box-shadow: 0 0 10px #fffc00;
         background-color: #FFFC00;
         button {
+            padding: 1.042vw 3.385vw;
             color: #000;
             font-family: $bw-black;
             font-size: 1.719vw;
@@ -81,6 +81,10 @@
             border: none;
             text-transform: uppercase;
             cursor: pointer;
+            &:focus {
+                outline: 0;
+                border: 0;
+            }
         }
     }
     .fifthSec-texts-wrapper {
