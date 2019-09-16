@@ -4,4 +4,4 @@ O teste proposto era replicar o layout recebido.
 
 ![](my-gif.gif)
 
-baixe e rode o gulp para rodar :)
+baixe, rode "npm install" e o "gulp" para rodar :)
